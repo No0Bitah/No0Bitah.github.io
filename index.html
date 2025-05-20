@@ -10,7 +10,7 @@
             --black: #000000;
             --rust: #8B3A2A;
             --terra: #BF5A2B;
-            --orange: #F28C28;
+            --orange: rgb(242, 140, 40);
             --cream: #FFF3E0;
             --sage: #C3C9C0;
             --teal: #84BCBA;
@@ -264,6 +264,20 @@
 
         .project-links a:hover {
             color: var(--orange);
+        }
+        .text-links {
+            display: flex;
+        }
+
+        .text-links a {
+            color: var(--cream);
+            transition: color 0.3s ease;
+        }
+
+        .text-links a:hover {
+            color: var(--orange);
+            font-size: 1.1rem;
+
         }
 
         /* Experience section */
@@ -531,8 +545,10 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Python Developer & <span>Data Engineer</span></h1>
-                <p>Specializing in backend development, API integration, and data management solutions. Passionate about building efficient and scalable Python applications.</p>
+                <h1>Python Developer & <span>Aspiring Data Engineer</span></h1>
+                <p>Specializing in backend development, API integration, data management solutions and automation solutions. Passionate about building efficient and scalable Python applications.
+                    Currently expanding expertise in data engineering, focusing on ETL pipelines and data automation.
+                </p>
                 <a href="#projects" class="btn">View My Work</a>
                 <a href="#contact" class="btn btn-outline">Contact Me</a>
             </div>
@@ -554,11 +570,13 @@
                         <div class="skill">Data Management</div>
                         <div class="skill">ZFS Oracle Storage</div>
                         <div class="skill">NetApp</div>
+                        <div class="skill">IBM</div>
                         <div class="skill">Google API</div>
-                        <div class="skill">OpenAI</div>
+                        <div class="skill">Serpapi</div>
                         <div class="skill">HTML/CSS</div>
                         <div class="skill">JavaScript</div>
                         <div class="skill">WordPress</div>
+                        <div class="skill">Elementor</div>
                     </div>
                 </div>
                 <div class="about-image">
@@ -582,10 +600,10 @@
                         <i class="fas fa-database"></i>
                     </div>
                     <div class="project-content">
-                        <h3>Data Management API</h3>
-                        <p>A Python-based REST API for efficient data storage and retrieval using ZFS Oracle Storage.</p>
+                        <h3>IBM mmvdisk manager</h3>
+                        <p>A Python-based REST API helps manage disks in a virtual disk environment (mmvdisk), identifying disks that need replacement and providing options to prepare or replace them.</p>
                         <div class="project-links">
-                            <a href="https://github.com/No0Bitah" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/No0Bitah/ibm-mmvdisk-manager" target="_blank"><i class="fab fa-github"></i></a>
                             <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
@@ -597,8 +615,8 @@
                         <i class="fas fa-brain"></i>
                     </div>
                     <div class="project-content">
-                        <h3>OpenAI Integration Tool</h3>
-                        <p>A tool that leverages OpenAI API to analyze and process data for insights and automation.</p>
+                        <h3>Advanced Local SEO Analysis Tool</h3>
+                        <p>for SEO professionals and local business analysts to extract, analyze, and compare Google Maps and organic search rankings. </p>
                         <div class="project-links">
                             <a href="https://github.com/No0Bitah" target="_blank"><i class="fab fa-github"></i></a>
                             <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
@@ -636,10 +654,10 @@
                         <h4>January 2022 - Present</h4>
                         <ul>
                             <li>Developed and maintained RESTful APIs</li>
-                            <li>Implemented data management solutions</li>
-                            <li>Integrated with Google API and OpenAI</li>
-                            <li>Worked with ZFS Oracle Storage and NetApp</li>
-                            <li>Created ZFS Oracle Simulator for testing</li>
+                            <li>Implemented data management and automation solutions</li>
+                            <li>Integrated with Google API and OpenAI for data-driven services</li>
+                            <li>Automated recurring processes with ZFS Oracle and NetApp Storage</li>
+                            <li>Created scripts for gathering business information for local SEO and market research</li>
                         </ul>
                     </div>
                 </div>
@@ -650,9 +668,8 @@
                         <h3>Junior Web Designer</h3>
                         <h4>March 2019 - February 2020</h4>
                         <ul>
-                            <li>Designed and developed responsive websites</li>
-                            <li>Worked with WordPress, HTML, CSS, and JavaScript</li>
-                            <li>Optimized web pages for performance</li>
+                            <li>Designed and developed responsive websites with WordPress and Elementor</li>
+                            <li>Optimized web pages for performance and usability</li>
                             <li>Created UI elements using Photoshop</li>
                             <li>Implemented jQuery functionality</li>
                         </ul>
@@ -663,13 +680,13 @@
                 <div class="timeline-item">
                     <div class="timeline-content">
                         <h3>Web Developer</h3>
-                        <h4>June 2018 - August 2018</h4>
+                        <h4>June 2018 - March 2019</h4>
                         <ul>
-                            <li>Developed websites using WordPress</li>
-                            <li>Created mobile applications with Apache Cordova</li>
-                            <li>Built custom functionality with JavaScript</li>
-                            <li>Implemented API integrations</li>
-                            <li>Designed responsive layouts with HTML/CSS</li>
+                            <li>Developed websites using WordPress and Elementor</li>
+                            <li>Built a digital renting system</li>
+                            <li>Developed an online library platform using Django, PostgreSQL, and Bootstrapt</li>
+                            <li>Created an employee ID scanning app using Apache Cordova and Python backend</li>
+                            <li>Developed multiple WordPress websites with custom JavaScript features</li>
                         </ul>
                     </div>
                 </div>
@@ -736,53 +753,39 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-text">
-                    <h3>Let's Work Together</h3>
-                    <p>I'm currently looking for new opportunities in Python development and Data Engineering. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
-                    <div class="contact-info">
-                        <div class="contact-info-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>email@example.com</span>
-                        </div>
-                        <div class="contact-info-item">
-                            <i class="fab fa-github"></i>
-                            <span>github.com/No0Bitah</span>
-                        </div>
-                        <div class="contact-info-item">
-                            <i class="fab fa-linkedin"></i>
-                            <span>linkedin.com/in/yourprofile</span>
-                        </div>
-                        <div class="contact-info-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Available for remote work</span>
-                        </div>
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-text">
+                <h3>Let's Work Together</h3>
+                <p>I'm currently looking for new opportunities in Python development and Data Engineering. Whether you have a question or just want to say hi, feel free to reach out via the links below.</p>
+                <div class="contact-info">
+                    <div class="contact-info-item text-links">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:jomari.daison@gmail.com">jomari.daison@gmail.com</a>
+                    </div>
+                    <div class="contact-info-item text-links">
+                        <i class="fab fa-github"></i>
+                        <a href="https://www.github.com/No0Bitah">GitHub</a>
+                    </div>
+                    <div class="contact-info-item text-links">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/jomari-daison-406624334/">LinkedIn</a>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Available for remote work</span>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" class="form-control" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Send Message</button>
-                    </form>
-                </div>
+            </div>
+            <div class="about-image">
+                <img src="contact.svg" alt="Contact Illustration" style="width: 100%; height: auto; border-radius: 8px;">
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer>
@@ -796,38 +799,5 @@
         </div>
     </footer>
 
-    <script>
-        // Mobile menu toggle
-        const mobileMenu = document.querySelector('.mobile-menu');
-        const navLinks = document.querySelector('.nav-links');
-
-        mobileMenu.addEventListener('click', () => {
-            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-                // Close mobile menu if open
-                if (window.innerWidth <= 768) {
-                    navLinks.style.display = 'none';
-                }
-            });
-        });
-
-        // Form submission
-        const contactForm = document.getElementById('contactForm');
-        if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                alert('Thank you for your message! This is a demo form and does not actually send emails.');
-                contactForm.reset();
-            });
-        }
-    </script>
 </body>
 </html>
